@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .mobile-nav {
+        @apply max-md:absolute max-md:top-0 max-md:right-0 max-md:z-10 max-md:flex-col max-md:gap-0 max-md:bg-white dark:max-md:bg-neutral-800 max-md:w-9/12 max-md:h-lvh transition-transform duration-300;
+    }
+
+    .mobile-link {
+        @apply max-md:hover:bg-blue-100 dark:max-md:hover:bg-neutral-700 max-md:py-4 max-md:px-5 transition-colors duration-300;
+    }
+
+    .mobile-nav-btn {
+        @apply text-4xl h-14 w-14 grid place-content-center hover:bg-neutral-100 dark:hover:bg-neutral-700 md:hidden transition-colors duration-300 active:text-sky-500;
+    }
+
+    .big-screen-navlink-hover {
+        @apply md:after:block md:after:h-px md:after:bg-blue-500 md:after:w-0 md:after:transition-[width,backgroud-color] md:after:duration-300 md:after:rounded;
+    }
+
+    .section {
+        @apply min-h-screen pt-14;
+    }
+
+    .social-icon {
+        @apply hover:scale-110 hover:text-blue-500 transition duration-300 text-4xl;
+    }
+}
